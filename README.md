@@ -18,3 +18,7 @@ This is my first project, to implements a 4-bit synchronous up counter using Ver
 - Verilog HDL
 - Virtual box Verilator
 - GTKWave for waveform simulation
+
+# Simulation Waveform
+
+![Waveform](waveform.png)
