@@ -17,4 +17,4 @@ This is my first project, to implements a 4-bit synchronous up counter using Ver
 ## Tools Used
 - Verilog HDL
 - Virtual box Verilator
-- GTKWave for waneform simulation
+- GTKWave for waveform simulation
