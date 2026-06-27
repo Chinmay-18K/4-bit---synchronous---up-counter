@@ -1,0 +1,16 @@
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter$ ls
+obj_dir  up_counter_4bit.v  up_counter_4bit_tb.v
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter$ gvim up_counter_4bit.v
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter$ gvim up_counter_4bit_tb.v
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter$ verilator --binary -j 0 -Wall up_counter_4bit.v up_counter_4bit_tb.v --top up_counter_4bit_tb --timing --CFLAGS "-std=c++20" --trace
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter$ cd obj_dir/
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter/obj_dir$ ls
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter/obj_dir$ make -f Vup_counter_4bit_tb.mk Vup_counter_4bit_tb
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter/obj_dir$ ./Vup_counter_4bit_tb
+
+/Desktop/my_vlsi_project/lab5_synchronous_upcounter/obj_dir$ gtkwave up_counter_4bit_dump.vcd
